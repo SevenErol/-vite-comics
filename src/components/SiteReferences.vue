@@ -6,26 +6,31 @@ export default {
         return {
             cols: [
                 {
-                    imgURL: "buy-comics-digital-comics.png",
+                    img: "buy-comics-digital-comics.png",
                     text: "digital comics"
                 },
                 {
-                    imgURL: "buy-comics-merchandise.png",
+                    img: "buy-comics-merchandise.png",
                     text: "dc merchandise"
                 },
                 {
-                    imgURL: "buy-comics-shop-locator.png",
+                    img: "buy-comics-shop-locator.png",
                     text: "subscriptions"
                 },
                 {
-                    imgURL: "buy-comics-subscriptions.png",
+                    img: "buy-comics-subscriptions.png",
                     text: "comic shop locator"
                 },
                 {
-                    imgURL: "buy-dc-power-visa.svg",
+                    img: "buy-dc-power-visa.svg",
                     text: "dc power visa"
                 }
             ]
+        }
+    },
+    methods: {
+        getImageUrl(path) {
+            return new URL(path, import.meta.url).href
         }
     }
 }
@@ -36,14 +41,21 @@ export default {
 
 <template>
 
-    <div class="container">
-        <div class="row">
-            <div class="col" v-for="item in cols">
-                <img :src="'../assets/img/' + item.imgURL" alt="">
-                <p>{{ item.text }}</p>
+    <section id="bg_blue">
+
+        <div class="container">
+            <div class="row">
+                <div class="col" v-for="item in cols">
+
+                    <img :src="getImageUrl('../assets/img/' + item.img)" alt=""
+                        :class="item.img === 'buy-comics-shop-locator.png' ? 'locator' : ''">
+                    <p>{{ item.text }}</p>
+
+                </div>
             </div>
         </div>
-    </div>
+
+    </section>
 
 </template>
 
