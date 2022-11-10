@@ -13,7 +13,9 @@ export default {
 
 <template>
 
-  <SiteHeader />
+  <div class="container">
+    <SiteHeader />
+  </div>
 
 
 </template>

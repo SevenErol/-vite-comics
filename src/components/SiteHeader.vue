@@ -62,7 +62,7 @@ export default {
         </div>
         <nav class="navbar">
             <a :href="item.href" v-for="item in navMenu">
-                {{ item.text }}
+                {{ item.text.toUpperCase() }}
             </a>
         </nav>
     </header>
