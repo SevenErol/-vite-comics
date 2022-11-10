@@ -28,3 +28,9 @@ body {
 img {
     max-width: 100%;
 }
+
+#bg_image {
+    background-image: url("./assets/img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

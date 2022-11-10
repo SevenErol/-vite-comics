@@ -61,13 +61,22 @@ export default {
 <template>
 
     <section id="bg_image">
-        <div class="container">
-            <div class="list" v-for="item in links">
-                <h5>{{ item.title }}</h5>
-                <ul>
-                    <li v-for="link in item.list">{{ link }}</li>
-                </ul>
+        <div class="container banner">
+            <div class="row_banner">
+                <div class="col-4">
+                    <div class="list" v-for="item in links">
+                        <h3>{{ item.title.toUpperCase() }}</h3>
+                        <ul>
+                            <li v-for="link in item.list">{{ link }}</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <img src="../assets/img/dc-logo-bg.png" alt="">
+                </div>
             </div>
+
         </div>
     </section>
 
