@@ -1,11 +1,13 @@
 <script>
 
 import SiteHeader from "./components/SiteHeader.vue"
+import SiteContent from "./components/SiteContent.vue"
 
 export default {
   name: 'App',
   components: {
-    SiteHeader
+    SiteHeader,
+    SiteContent
   }
 }
 
@@ -16,6 +18,10 @@ export default {
   <div class="container">
     <SiteHeader />
   </div>
+
+  <main>
+    <SiteContent />
+  </main>
 
 
 </template>
