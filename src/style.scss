@@ -2,6 +2,12 @@
 
 @use "./assets/scss/partials/content";
 
+@use "./assets/scss/partials/references";
+
+@use "./assets/scss/partials/banner";
+
+@use "../node_modules/bootstrap/scss/bootstrap-grid.scss";
+
 
 * {
     margin: 0;

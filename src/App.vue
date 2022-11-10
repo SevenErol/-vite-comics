@@ -2,12 +2,14 @@
 
 import SiteHeader from "./components/SiteHeader.vue"
 import SiteContent from "./components/SiteContent.vue"
+import SiteReferences from "./components/SiteReferences.vue"
 
 export default {
   name: 'App',
   components: {
     SiteHeader,
-    SiteContent
+    SiteContent,
+    SiteReferences
   }
 }
 
@@ -21,6 +23,8 @@ export default {
 
   <main>
     <SiteContent />
+
+    <SiteReferences />
   </main>
 
 
