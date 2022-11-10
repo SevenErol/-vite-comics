@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 header {
     display: flex;
     justify-content: space-between;
@@ -14,8 +16,8 @@ header {
             text-decoration: none;
 
             &:hover {
-                border-bottom: 4px solid cornflowerblue;
-                color: cornflowerblue;
+                border-bottom: 4px solid $primary;
+                color: $primary;
             }
         }
     }

@@ -1,6 +1,8 @@
+@use 'variables' as *;
+
 #bg_blue {
-    background-color: lightskyblue;
-    color: white;
+    background-color: $primary;
+    color: $light;
 
     .row {
         padding: 2rem;
@@ -12,11 +14,15 @@
 
         img {
             width: 50px;
-            margin: 1rem;
+            margin: 0.5rem;
         }
 
         .locator {
             width: 36px;
+        }
+
+        p {
+            font-size: 12px;
         }
     }
 }

@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .row_banner {
     height: 400px;
     display: flex;
@@ -11,12 +13,12 @@
         padding: 1rem;
 
         h3 {
-            color: white;
+            color: $light;
         }
 
         li {
             list-style: none;
-            color: grey;
+            color: $lighter;
             font-size: 12px;
             margin: 1rem 0;
         }

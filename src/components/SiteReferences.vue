@@ -49,7 +49,7 @@ export default {
 
                     <img :src="getImageUrl('../assets/img/' + item.img)" alt=""
                         :class="item.img === 'buy-comics-shop-locator.png' ? 'locator' : ''">
-                    <p>{{ item.text }}</p>
+                    <p>{{ item.text.toUpperCase() }}</p>
 
                 </div>
             </div>
