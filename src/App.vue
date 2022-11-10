@@ -4,7 +4,7 @@ import SiteHeader from "./components/SiteHeader.vue"
 import SiteContent from "./components/SiteContent.vue"
 import SiteReferences from "./components/SiteReferences.vue"
 import SiteBanner from "./components/SiteBanner.vue"
-// import SiteFooter from "./components/SiteFooter.vue"
+import SiteFooter from "./components/SiteFooter.vue"
 
 export default {
   name: 'App',
@@ -13,7 +13,7 @@ export default {
     SiteContent,
     SiteReferences,
     SiteBanner,
-    // SiteFooter
+    SiteFooter
   }
 }
 
@@ -31,7 +31,10 @@ export default {
     <SiteReferences />
 
     <SiteBanner />
+
   </main>
+
+  <SiteFooter />
 
 
 </template>

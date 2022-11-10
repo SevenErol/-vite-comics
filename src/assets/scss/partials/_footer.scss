@@ -1,0 +1,36 @@
+#bg_grey {
+    background-color: #f1f1f1;
+
+    #site_footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+
+        button {
+            padding: 1rem;
+            border: 2px solid cornflowerblue;
+
+            &:hover {
+                cursor: pointer;
+                background-color: lightcyan;
+                transition: 0.4s;
+            }
+        }
+
+        .social {
+            display: flex;
+            align-items: center;
+
+            span {
+                color: cornflowerblue;
+                font-weight: bold;
+            }
+
+            img {
+                margin: 0.5rem;
+            }
+        }
+
+
+    }
+}

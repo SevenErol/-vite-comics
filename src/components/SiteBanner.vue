@@ -72,7 +72,7 @@ export default {
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col-6 img_position">
                     <img src="../assets/img/dc-logo-bg.png" alt="">
                 </div>
             </div>
