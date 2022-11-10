@@ -1,5 +1,6 @@
 <script>
 
+// imported Vue components
 import SiteHeader from "./components/SiteHeader.vue"
 import SiteContent from "./components/SiteContent.vue"
 import SiteReferences from "./components/SiteReferences.vue"
@@ -21,19 +22,26 @@ export default {
 
 <template>
 
+  <!-- site header with container -->
   <div class="container">
     <SiteHeader />
   </div>
 
+  <!-- site main page with sections -->
   <main>
+
+    <!-- section site content -->
     <SiteContent />
 
+    <!-- section site references -->
     <SiteReferences />
 
+    <!-- section site banner -->
     <SiteBanner />
 
   </main>
 
+  <!-- site footer  -->
   <SiteFooter />
 
 

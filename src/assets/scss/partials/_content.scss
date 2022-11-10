@@ -1,9 +1,12 @@
+// imported use of variables defined in _variables.scss
+@use "variables" as *;
+
 #bg_black {
-    background-color: black;
+    background-color: $dark;
     height: 40px;
 
     .content {
-        color: white;
+        color: $light;
         padding: 1rem;
     }
 }
