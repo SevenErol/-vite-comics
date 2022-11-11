@@ -7,5 +7,9 @@
     .content {
         color: $light;
         padding: 1rem;
+
+        .col-2 {
+            margin-bottom: 1rem;
+        }
     }
 }
