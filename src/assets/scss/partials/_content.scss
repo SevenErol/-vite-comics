@@ -12,4 +12,25 @@
             margin-bottom: 1rem;
         }
     }
+
+    .centered_button {
+        text-align: center;
+
+        button {
+            padding: 0.5rem 2rem;
+            background-color: $primary;
+            color: $light;
+            font-family: 'PT Sans Narrow', sans-serif;
+            margin-bottom: 1rem;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $light;
+                color: $dark;
+                transition: 0.4s;
+            }
+        }
+    }
+
+
 }

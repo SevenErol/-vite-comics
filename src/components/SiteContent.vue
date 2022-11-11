@@ -21,7 +21,13 @@ export default {
                     <ComicBookList />
                 </div>
             </div>
+
+            <div class="centered_button">
+                <button>LOAD MORE</button>
+            </div>
+
         </div>
+
     </section>
 
 </template>
