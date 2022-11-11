@@ -26,10 +26,20 @@ export default {
                 <button>LOAD MORE</button>
             </div>
 
+            <div class="disclaimer">
+                <p>CURRENT SERIES</p>
+            </div>
+
         </div>
 
     </section>
 
 </template>
+
+<style lang="scss" scoped>
+.container {
+    position: relative;
+}
+</style>
 
 
