@@ -1,7 +1,12 @@
 <script>
+import ComicBookList from './ComicBookList.vue';
 
 export default {
-    name: "SiteContent"
+    name: "SiteContent",
+
+    components: {
+        ComicBookList
+    }
 }
 </script>
 
@@ -12,7 +17,9 @@ export default {
     <section id="bg_black">
         <div class="container">
             <div class="content">
-                --content here--
+                <div class="row">
+                    <ComicBookList />
+                </div>
             </div>
         </div>
     </section>
